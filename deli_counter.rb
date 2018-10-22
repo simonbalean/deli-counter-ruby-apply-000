@@ -11,7 +11,7 @@ def line(katz_deli)
       x << "#{index + 1}. #{name}"
     end
     
-      puts "The line is currently: #{x}"
+      puts x
   end
 end
 
