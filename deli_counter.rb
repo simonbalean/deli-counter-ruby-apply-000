@@ -32,5 +32,5 @@ end
 var1 = ["A", "B", "C"]
 var1.each.with_index(1) do |value, index|
     x = "#{index}: #{value}"
-    puts x
+    puts "#{x}
 end
