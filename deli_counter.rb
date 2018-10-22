@@ -8,11 +8,10 @@ def line(katz_deli)
   else
     
     katz_deli.each_with_index do |name, index|
-      line << "#{index}. #{name}"
-      line_number = line_number + 1
+      liner << "#{index + 1}. #{name}"
     end
     
-      puts "The line is currently: #{line.join(" ")}"
+      puts "The line is currently: #{liner.join(" ")}"
   end
 end
 
