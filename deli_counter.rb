@@ -11,7 +11,7 @@ def line(katz_deli)
       liner << "#{index + 1}. #{name}"
     end
     
-      puts "The line is currently: #{liner.join(" ")}"
+      puts "The line is currently: #{liner}"
   end
 end
 
