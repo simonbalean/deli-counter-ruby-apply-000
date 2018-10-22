@@ -3,16 +3,17 @@
 katz_deli = []
 
  def line (deli_line)
-  x = "The line is currently:"
   if deli_line.length > 0 
+    puts "The line is currently empty."
+  else 
+    x = "The line is currently:"
     deli_line.each_with_index do |name, index|
       x << " #{index+1}. #{name}"
     end
     puts x 
-  else 
-    puts "The line is currently empty."
   end
 end
+
 
 def take_a_number(katz_deli, name)
   katz_deli << "#{name}"
