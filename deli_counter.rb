@@ -8,10 +8,10 @@ def line(katz_deli)
   else
     
     katz_deli.each_with_index do |name, index|
-      liner << "#{index + 1}. #{name}"
+      x << "#{index + 1}. #{name}"
     end
     
-      puts "The line is currently: #{liner}"
+      puts "The line is currently: #{x}"
   end
 end
 
