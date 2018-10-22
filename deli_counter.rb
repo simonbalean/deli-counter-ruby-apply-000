@@ -2,15 +2,17 @@
 
 katz_deli = []
 
- def line (deli_line)
-  x = "The line is currently:"
-  if deli_line.length > 0 
-    deli_line.each_with_index do |name, index|
-      x << " #{index+1}. #{name}"
-    end
-    puts x 
-  else 
+def line(katz_deli)
+  if katz_deli == []
     puts "The line is currently empty."
+  else
+    line = []
+    line_number = 1
+    katz_deli.each do |line_name|
+      line << "#{line_number}. #{line_name}"
+      line_number = line_number + 1
+    end
+      puts "The line is currently: #{line.join(" ")}"
   end
 end
 
