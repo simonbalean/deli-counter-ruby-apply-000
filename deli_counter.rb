@@ -29,8 +29,16 @@ def now_serving(katz_deli)
   end
 end
 
+
+
 var1 = ["A", "B", "C"]
 var1.each.with_index(1) do |value, index|
     x = "#{index}: #{value}"
-    puts "#{x.join(" ")}"
+    puts "#{x}"
 end
+
+puts "#{x.join(" ")}"
+
+
+
+
