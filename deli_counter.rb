@@ -6,7 +6,7 @@ def line(katz_deli)
   if katz_deli == []
     puts "The line is currently empty."
   else
-    katz_deli.each do |line_name, line_number|
+    katz_deli.each_with_line_number do |line_name, line_number|
       line << "#{line_number + 1}. #{line_name}"
     end
       puts "The line is currently: #{line.join(" ")}"
