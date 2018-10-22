@@ -6,7 +6,6 @@ def line(katz_deli)
   if katz_deli == []
     puts "The line is currently empty."
   else
-    line = []
     katz_deli.each do |line_name, line_number|
       line << "#{line_number + 1}. #{line_name}"
     end
